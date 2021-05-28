@@ -29,8 +29,10 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (ctx) => CategoriesScreen(),
           CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
-          // MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
-        },
+          MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
+        });
+  }
+}
         // onGenerateRoute: (settings) {
         //   print(settings.arguments);
         //   if (settings.name == '/meal-detail') {
@@ -40,14 +42,13 @@ class MyApp extends StatelessWidget {
         //   }
         //   return MaterialPageRoute(builder: (ctx) => CategoriesScreen());
         // },
-        onUnknownRoute: (settings) {
-          return MaterialPageRoute(builder: (ctx) => CategoriesScreen());
-        });
+        // onUnknownRoute: (settings) {
+        //   return MaterialPageRoute(builder: (ctx) => CategoriesScreen());
+        // });
     //{
     //   '/categories-screen': (_) => CategoriesScreen(),
     //   '/categories-meals': (ctx) => CategoryMealsScreen(),
     //   // CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
     //   RoutePaths.CategoriesMeal: (ctx) => CategoryMealsScreen(),
     // });
-  }
-}
+  
